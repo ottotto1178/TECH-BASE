@@ -10,9 +10,9 @@
   <p>好きな食べ物を教えてください</p>
   <?php
     // データベース接続～テーブル作成
-    $dsn = 'mysql:dbname=tb250181db;host=localhost';
-    $user = 'tb-250181';
-    $password = '7d2tAGvurh';
+    $dsn = 'mysql:dbname=データベース名;host=localhost';
+    $user = 'ユーザ名';
+    $password = 'パスワード';
     $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
     $sql = "CREATE TABLE IF NOT EXISTS forum_table"
     ." ("
